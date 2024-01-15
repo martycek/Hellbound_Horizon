@@ -70,7 +70,7 @@ Material:
     - Vector1_DE1FA4AD: 1
     - _EnableExternalAlpha: 0
     m_Colors:
-    - Color_66309D73: {r: 0.5306604, g: 0.6102269, b: 0.7075472, a: 0.77254903}
+    - Color_66309D73: {r: 1, g: 0.72248167, b: 0, a: 0.77254903}
     - Vector2_458BA623: {r: 6, g: 6, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
