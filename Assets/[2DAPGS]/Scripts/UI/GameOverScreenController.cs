@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class GameOverScreenController : MonoBehaviour
 {
     public Canvas GameOverScreenCanvas;
@@ -27,42 +26,42 @@ public class GameOverScreenController : MonoBehaviour
 
     void StartGameOver()
     {
-        //kontrola spamstartu hry
+        // Control for preventing multiple game over starts
         gameOverStarted = true;
 
-        // ukaž KURZOR
+        // Show the cursor
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None; // Unlockos
+        Cursor.lockState = CursorLockMode.None; // Unlock the cursor
 
-        // aktivace kanvasu po smrti
+        // Activate the canvas after player death
         GameOverScreenCanvas.gameObject.SetActive(true);
 
-        // ZAHRAJ the death music
+        // Play the death music
         audioSource.clip = deathMusic;
         audioSource.Play();
 
-        // UKAŽ BUTTONS ZA...
+        // Show the buttons after a delay
         Invoke(nameof(ShowButtons), 4f);
     }
 
     void ShowButtons()
     {
-        // UKAŽ BUTTOns
+        // Show the buttons
         reloadButton.interactable = true;
         menuButton.interactable = true;
     }
 
-    // DEJ SEM BUTONOLI LOGIC
-    
+    // Button click methods with original comments
+
+    // Reload the current level
     public void ReloadLevel()
     {
-        // reloadne level
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    // Load the menu scene
     public void LoadMenu()
     {
-        // nacte menu
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MenuScene");
+        SceneManager.LoadScene("MenuScene");
     }
 }
