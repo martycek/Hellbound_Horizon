@@ -26,6 +26,7 @@ public class GameOverScreenController : MonoBehaviour
 
     void StartGameOver()
     {
+        Debug.Log("StartGameOver");
         // Control for preventing multiple game over starts
         gameOverStarted = true;
 
@@ -46,6 +47,7 @@ public class GameOverScreenController : MonoBehaviour
 
     void ShowButtons()
     {
+        Debug.Log("ShowButtons");
         // Show the buttons
         reloadButton.interactable = true;
         menuButton.interactable = true;
