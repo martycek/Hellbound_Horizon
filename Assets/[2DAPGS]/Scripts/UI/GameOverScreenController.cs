@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class GameOverScreenController : MonoBehaviour
 {
@@ -27,43 +29,51 @@ public class GameOverScreenController : MonoBehaviour
     void StartGameOver()
     {
         Debug.Log("StartGameOver");
-        // Control for preventing multiple game over starts
+        //kontrola spamstartu hry
         gameOverStarted = true;
 
-        // Show the cursor
+        // ukaž KURZOR
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None; // Unlock the cursor
+        Cursor.lockState = CursorLockMode.None; // Unlockos
 
-        // Activate the canvas after player death
+        // aktivace kanvasu po smrti
         GameOverScreenCanvas.gameObject.SetActive(true);
 
-        // Play the death music
+        // ZAHRAJ the death music
         audioSource.clip = deathMusic;
         audioSource.Play();
 
-        // Show the buttons after a delay
+        // UKAŽ BUTTONS ZA...
         Invoke(nameof(ShowButtons), 4f);
+        Debug.Log("sss");
     }
 
     void ShowButtons()
     {
         Debug.Log("ShowButtons");
-        // Show the buttons
+        // UKAŽ BUTTOns
         reloadButton.interactable = true;
         menuButton.interactable = true;
     }
 
-    // Button click methods with original comments
+    // DEJ SEM BUTONOLI LOGIC
 
-    // Reload the current level
     public void ReloadLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("RELOOOOOOOOAAD");
+        // reloadne level
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
-    // Load the menu scene
     public void LoadMenu()
     {
-        SceneManager.LoadScene("MenuScene");
+        Debug.Log("MENUUUUU");
+        // nacte menu
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MenuScene");
     }
-}
+    public void OnClick()
+    {
+
+    }
+
+}   
