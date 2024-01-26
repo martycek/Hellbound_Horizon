@@ -8,8 +8,7 @@ public class GameOverScreenController : MonoBehaviour
 {
     public Canvas GameOverScreenCanvas;
     public Image deathImage;
-    public Button reloadButton;
-    public Button menuButton;
+    
     public AudioSource audioSource;
     public AudioClip deathMusic;
     public Player player;
@@ -28,7 +27,7 @@ public class GameOverScreenController : MonoBehaviour
 
     void StartGameOver()
     {
-        Debug.Log("StartGameOver");
+        Debug.Log("StartGameOver!!!!!!!!!!!!");
         //kontrola spamstartu hry
         gameOverStarted = true;
 
@@ -44,26 +43,11 @@ public class GameOverScreenController : MonoBehaviour
         audioSource.Play();
 
         // UKAŽ BUTTONS ZA...
-        Invoke(nameof(ShowButtons), 4f);
-        Debug.Log("sss");
+        Invoke(nameof(LoadMenu), 5f);
+        Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAA");
     }
 
-    void ShowButtons()
-    {
-        Debug.Log("ShowButtons");
-        // UKAŽ BUTTOns
-        reloadButton.interactable = true;
-        menuButton.interactable = true;
-    }
 
-    // DEJ SEM BUTONOLI LOGIC
-
-    public void ReloadLevel()
-    {
-        Debug.Log("RELOOOOOOOOAAD");
-        // reloadne level
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-    }
 
     public void LoadMenu()
     {
@@ -71,9 +55,5 @@ public class GameOverScreenController : MonoBehaviour
         // nacte menu
         UnityEngine.SceneManagement.SceneManager.LoadScene("MenuScene");
     }
-    public void OnClick()
-    {
-
-    }
-
+    
 }   

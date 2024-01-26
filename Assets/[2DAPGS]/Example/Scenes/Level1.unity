@@ -2655,8 +2655,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOverScreenCanvas: {fileID: 388274109}
   deathImage: {fileID: 1431123072}
-  reloadButton: {fileID: 587323316}
-  menuButton: {fileID: 205580691}
   audioSource: {fileID: 3013780}
   deathMusic: {fileID: 0}
   player: {fileID: 8527330154744467127}
@@ -115162,12 +115160,12 @@ PrefabInstance:
     - target: {fileID: 6654809140293331236, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.617484
+      value: 14.64391
       objectReference: {fileID: 0}
     - target: {fileID: 6654809140293331236, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.536291
+      value: 19.547491
       objectReference: {fileID: 0}
     - target: {fileID: 6654809140293331236, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
@@ -115227,12 +115225,12 @@ PrefabInstance:
     - target: {fileID: 6654809141253230778, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.13851547
+      value: 0.11208916
       objectReference: {fileID: 0}
     - target: {fileID: 6654809141253230778, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05870819
+      value: 0.04750824
       objectReference: {fileID: 0}
     - target: {fileID: 6654809141253230779, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
