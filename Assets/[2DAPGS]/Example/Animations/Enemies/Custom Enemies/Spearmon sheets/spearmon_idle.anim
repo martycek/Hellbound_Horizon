@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: spearmon_death
+  m_Name: spearmon_idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -51,6 +51,15 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
+      - serializedVersion: 3
+        time: 0.8333333
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -63,27 +72,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 77895603, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - time: 0.083333336
-      value: {fileID: -1417518168, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - time: 0.16666667
-      value: {fileID: 388767936, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - time: 0.25
-      value: {fileID: -1419873312, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
+      value: {fileID: 1637939389, guid: 42ff7d00105322f4c9c470e3c66b9329, type: 3}
     - time: 0.33333334
-      value: {fileID: -732191579, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - time: 0.41666666
-      value: {fileID: -1419846032, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - time: 0.5
-      value: {fileID: -1667141882, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - time: 0.5833333
-      value: {fileID: -344694893, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
+      value: {fileID: 1113465472, guid: 42ff7d00105322f4c9c470e3c66b9329, type: 3}
     - time: 0.6666667
-      value: {fileID: -2017785573, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - time: 0.75
-      value: {fileID: -309069312, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - time: 0.8333333
-      value: {fileID: -124319450, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
+      value: {fileID: 415264417, guid: 42ff7d00105322f4c9c470e3c66b9329, type: 3}
+    - time: 1
+      value: {fileID: -1142823429, guid: 42ff7d00105322f4c9c470e3c66b9329, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -124,23 +119,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 77895603, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: -1417518168, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: 388767936, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: -1419873312, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: -732191579, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: -1419846032, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: -1667141882, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: -344694893, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: -2017785573, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: -309069312, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
-    - {fileID: -124319450, guid: 066bf15167d6bda4880a2eed84d00d4d, type: 3}
+    - {fileID: 1637939389, guid: 42ff7d00105322f4c9c470e3c66b9329, type: 3}
+    - {fileID: 1113465472, guid: 42ff7d00105322f4c9c470e3c66b9329, type: 3}
+    - {fileID: 415264417, guid: 42ff7d00105322f4c9c470e3c66b9329, type: 3}
+    - {fileID: -1142823429, guid: 42ff7d00105322f4c9c470e3c66b9329, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.9166666
+    m_StopTime: 1.0833334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -190,6 +178,15 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
+      - serializedVersion: 3
+        time: 0.8333333
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -204,7 +201,7 @@ AnimationClip:
   m_Events:
   - time: 0.083333336
     functionName: PlaySFX_byString
-    data: Death
+    data: Idle
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

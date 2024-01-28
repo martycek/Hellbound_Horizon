@@ -199,7 +199,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d1f37caa17b584b4898480462e3f9137, type: 2}
+  m_Motion: {fileID: 7400000, guid: 04b0a6b76cda47e46b6755230852ba28, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -274,7 +274,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 004c0b3637e4a374aa7e277aa4789e8f, type: 2}
+  m_Motion: {fileID: 7400000, guid: a3180e6c4bf60314cb0c1fe66de8e116, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -338,7 +338,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy_Skeleton
+  m_Name: Enemy_Spearmon
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Grounded
@@ -419,7 +419,7 @@ AnimatorStateMachine:
     m_Position: {x: 30, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5470229622618972357}
-    m_Position: {x: 160, y: 480, z: 0}
+    m_Position: {x: -120, y: 410, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -501,7 +501,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f157786f875960b4d9aeb1028057e9b1, type: 2}
+  m_Motion: {fileID: 7400000, guid: 73f387680ecf1b94fa626e8c971561c0, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
