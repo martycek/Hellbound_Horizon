@@ -1,68 +1,63 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class BossController : MonoBehaviour
 {
-    public GameObject fireballPrefab;  // Reference to the fireball prefab
-    public Transform fireballSpawnPoint;  // Point where the fireball will be spawned
-    public float spitInterval = 3f;  // Time interval between spitting fireballs
-    public float bossHealth = 100f;  // Example health value
+    public Transform player; // Assign the player's transform in the Inspector
+    public GameObject fireballPrefab; // Assign the fireball prefab in the Inspector
 
-    private float timer = 0f;
-    private Animator animator;
+    private bool canShoot = true;
 
     void Start()
     {
-        // Get the Animator component
-        animator = GetComponent<Animator>();
+        StartCoroutine(ShootFireballRoutine());
     }
 
     void Update()
     {
-        // Update the timer
-        timer += Time.deltaTime;
-
-        // Check if it's time to spit a fireball
-        if (timer >= spitInterval)
+        // Check if the player is in the same room (you'll need to implement your own logic here)
+        if (IsPlayerInSameRoom())
         {
-            SpitFireball();  // Call the function to spit a fireball
-            timer = 0f;  // Reset the timer
-
-            // When attacking
-            animator.SetBool("IsAttacking", true);
-        }
-
-        // Check for conditions to transition to the Death state
-        if (bossHealth <= 0)
-        {
-            // Set the "IsDead" parameter to trigger the Death state transition
-            animator.SetBool("IsDead", true);
-        }
-        else
-        {
-            // When done attacking or after a delay
-            animator.SetBool("IsAttacking", false);
+            // Your additional logic for when the player is in the same room
         }
     }
 
-    void SpitFireball()
+    IEnumerator ShootFireballRoutine()
     {
-        // Instantiate a fireball at the specified spawn point
-        Instantiate(fireballPrefab, fireballSpawnPoint.position, fireballSpawnPoint.rotation);
+        while (true)
+        {
+            // Check if the player is in the same room before shooting
+            if (IsPlayerInSameRoom() && canShoot)
+            {
+                ShootFireball();
+                canShoot = false; // Prevent shooting for a few seconds
+
+                // Wait for 3 seconds before shooting again
+                yield return new WaitForSeconds(3f);
+                
+                canShoot = true; // Allow shooting again
+            }
+
+            yield return null;
+        }
     }
 
-    // Other methods for handling boss damage or other interactions
-    public void TakeDamage(float damageAmount)
+    void ShootFireball()
     {
-        // Reduce boss health
-        bossHealth -= damageAmount;
+        // Instantiate a fireball prefab and set its position and direction
+        GameObject fireball = Instantiate(fireballPrefab, transform.position, Quaternion.identity);
+        Vector3 direction = (player.position - transform.position).normalized;
+        fireball.GetComponent<FireballController>().SetDirection(direction);
+    }
 
-        // Check if health is zero or below
-        if (bossHealth <= 0)
-        {
-            // Set the "IsDead" parameter to trigger the Death state transition
-            animator.SetBool("IsDead", true);
-        }
+    bool IsPlayerInSameRoom()
+    {
+        // Implement your own logic to check if the player is in the same room
+        // This could involve checking the player's position, room boundaries, etc.
+        // Return true if the player is in the same room; otherwise, return false.
+        // Replace this function with your actual implementation.
+        return true; // Placeholder, replace with your logic
     }
 }
