@@ -139,6 +139,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "menu-p",
+                    "type": "Button",
+                    "id": "61802d9c-0e9e-42a9-8151-4390f490f199",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -667,6 +676,17 @@
                     "processors": "",
                     "groups": "Xbox;PS4;Mobile",
                     "action": "QuickSlot4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "727eca31-b7d6-40bf-9d1a-78b6105ec1b9",
+                    "path": "<keyboard> /escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "menu-p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
