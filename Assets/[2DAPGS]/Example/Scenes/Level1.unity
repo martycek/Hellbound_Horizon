@@ -112450,7 +112450,7 @@ GameObject:
   - component: {fileID: 1290492184}
   m_Layer: 9
   m_Name: boss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112507,8 +112507,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -541526925
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 761419817, guid: 062db12594ee097438da9921c8c957e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -123143,12 +123143,12 @@ PrefabInstance:
     - target: {fileID: 6654809140293331236, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.756
+      value: 14.408992
       objectReference: {fileID: 0}
     - target: {fileID: 6654809140293331236, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.595
+      value: 18.794823
       objectReference: {fileID: 0}
     - target: {fileID: 6654809140293331236, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
@@ -123208,12 +123208,12 @@ PrefabInstance:
     - target: {fileID: 6654809141253230778, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.34700775
       objectReference: {fileID: 0}
     - target: {fileID: 6654809141253230778, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.8001766
       objectReference: {fileID: 0}
     - target: {fileID: 6654809141253230779, guid: 52217dbd05a8763478571bbb0cbcefdd,
         type: 3}
