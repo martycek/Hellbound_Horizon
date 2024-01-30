@@ -9,13 +9,27 @@ public class UIButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //StartCoroutine(LoadSceneAfterDelayCoroutine());
     }
 
-    // Update is called once per frame
+    // Update tvoji mamu
     public void Onclick()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1"); ;
 
+    }
+
+    
+    //žer hovna kemo
+    IEnumerator LoadSceneAfterDelayCoroutine()
+    {
+        yield return new WaitForSeconds(5f); // Wait for 5 seconds
+        SceneManager.LoadScene(sceneToLoad);
+    }
+
+    public void OnDick()
+    {
+        // You can still use this method without the delay if needed
+        StartCoroutine(LoadSceneAfterDelayCoroutine());
     }
 }
