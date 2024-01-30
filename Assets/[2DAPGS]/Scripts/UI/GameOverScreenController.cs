@@ -53,7 +53,7 @@ public class GameOverScreenController : MonoBehaviour
     {
         Debug.Log("MENUUUUU");
         // nacte menu
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MenuScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Menuscene");
     }
     
 }   
